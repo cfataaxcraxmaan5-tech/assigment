@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <mete http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS grid</title>
+    <meta name="descripion" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <style> 
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #c36e6e8b;
+            color: #0e0000;
+            line-height: 1.6;
+        }
+
+        .grid-section{
+            background-color: beige;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .grid-continer{
+            display:  grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .grid-box{
+            background-color: #4c4c4c;
+            padding: 18px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+        .responsive-grid-section{
+            background-color: white;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .responsive-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            gap: 20px;
+        }
+        .responsive-grid-box{
+            background-color: blueviolet;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+        .spaning-grid-section{
+            background-color: white;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .spaning-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(2,200px);
+            gap: 20px;
+        }
+        .spaning-grid-box-1{
+            background-color: rgb(78, 4, 35);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            grid-column: span 2;
+        }
+        .spaning-grid-box-2{
+            background-color: rgb(6, 236, 209);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+        .spaning-grid-box-3{
+            background-color: rgb(16, 48, 135);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            grid-row: span 2;
+        }
+        .spaning-grid-box-4{
+            background-color: rgb(2, 248, 166);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+        .spaning-grid-box-5{
+            background-color: rgb(76, 5, 67);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <section class="grid-section">
+        <h2>1 simple grid layout</h2>
+        <div class="grid-continer">
+            <div class="grid-box">Box 1</div>
+        <div class="grid-box">Box 2</div>
+        <div class="grid-box">Box 3</div>
+        <div class="grid-box">Box 4</div>
+        </div>
+    </section>
+
+    <section class="responsive-grid-section">
+        <h2>2:Responsive grid layout</h2>
+        <div class="responsive-grid">
+        <div class="responsive-grid-box">Box 1</div>
+        <div class="responsive-grid-box">Box 2</div>
+        <div class="responsive-grid-box">Box 3</div>
+        <div class="responsive-grid-box">Box 4</div>
+        <div class="responsive-grid-box">Box 5</div>
+        <div class="responsive-grid-box">Box 6</div>
+        </div>
+    </section>
+
+    <section class="spaning-grid-section">
+        <h2>3:spaning grid layout</h2>
+        <div class="spaning-grid">
+        <div class="spaning-grid-box-1">Box 1</div>
+        <div class="spaning-grid-box-2">Box 2</div>
+        <div class="spaning-grid-box-3">Box 3</div>
+        <div class="spaning-grid-box-4">Box 4</div>
+        <div class="spaning-grid-box-5">Box 5</div>
+        </div>
+    </section>
+
+    <section class="aligment-grid-section">
+        <h2>4:grid aligment</h2>
+        <div class="aligment-grid">
+        <div class="aligment-grid-box">Box 1</div>
+        <div class="aligment-grid-box">Box 2</div>
+        <div class="aligment-grid-box">Box 3</div>
+        <div class="aligment-grid-box">Box 4</div>
+        <div class="aligment-grid-box">Box 5</div>
+        </div>
+    </section>
+</body>
+</html>

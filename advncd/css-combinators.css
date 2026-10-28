@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(6, 91, 117);
+}
+.blog-post .author{
+    font-weight: bold;
+}
+.blog-post .date{
+    font-weight: bold
+}
+.blog-post > .title{
+    color: blanchedalmond;
+}
+.blog-post .title + .descripion{
+    font-style: italic;
+}
+/* ma shqyn */
+.blog-post .meta ~ content{
+    background-color: #2ef406;
+    padding-top: 10px;
+}

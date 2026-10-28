@@ -1,0 +1,44 @@
+/*.container{
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    background-color: darkgreen;
+}
+
+.position{
+    top: 5px;
+    right: 2;
+    position: absolute;
+    width: auto;
+    background-color: darkorchid;
+}*/
+/*.container{
+    height: 500px;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+.position{
+    position: fixed;
+    bottom: 5px;
+    right: 4px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}*/
+.header{
+    position: sticky;
+    top: 0;
+    background-color: cornflowerblue;
+    color: blue;
+    padding: 5px;
+}
+.content{
+    height: auto;
+    background-color: antiquewhite;
+    padding: 10px;
+}

@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkcyan;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(5, 79, 136);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 0;
+}
+.title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: black;
+    margin: 5px auto 0;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    margin: 0 10px;
+
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 12px solid transparent;
+}
+.menu li a:hover{
+    border-color: black;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+#about{
+    padding: 2o0px;
+    text-align: center;
+}
+#about::before{
+    content: icon;
+}
+.skills{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.skills li{
+    margin: 5px 0;
+    margin: 5px;
+    border: 1px solid #dddd;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    width: 150px;
+    margin: o auto;
+}
+.skills li:nth-child(odd){
+    background-color: brown;
+}
+.skills li:nth-child(even){
+    background-color: rgb(104, 5, 67);
+}
+.skills li:nth-child(3){
+    font-weight: bold;
+    color: rgb(236, 248, 9);
+}
+form{
+    display: inline-block;
+    text-align: center;
+    background-color: ;
+    padding: 20px;
+    border: 1px solid #010a20dd;
+    border-radius: 8px;
+}
+.input{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    border: 1px solid #0b882edd;
+    border-radius: 4px;
+}
+.input:focus{
+    background-color: rgba(2, 126, 75, 0.53);
+    border-color: chartreuse;
+    outline: none;
+}
+button{
+    background-color: rgb(39, 2, 57);
+    color: rgb(243, 246, 248);
+    padding: 10PX 20PX;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    
+}
+footer{
+    display: block;
+    background-color: rgb(53, 2, 44);
+    color: white;
+    padding: 4px 0;
+}

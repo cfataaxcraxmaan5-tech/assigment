@@ -1,0 +1,25 @@
+h1{
+    color: aqua;
+    background-color: rgb(20, 4, 139);
+}
+*{
+    margin: 5;
+    padding: 60;
+}
+
+.selector{
+    color: rgba(27, 104, 104, 0.999);
+
+}
+#idselector{
+    font-size: 15px;
+    background-color: rgb(8, 240, 248);
+}
+
+P,h1{
+    color: rgb(1, 18, 3);
+}
+div P{
+    color: black;
+    background-color: blueviolet;
+}

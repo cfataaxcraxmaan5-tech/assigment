@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <mete http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> CSS flexbox</title>
+    <meta name="descripion" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: white;
+            color: #989;
+            line-height: 1.6;
+        }
+        header{
+            text-align: center;
+            background-color: #989;
+            flex-wrap: wrap;
+            color: white;
+            padding: 40px 20px;
+        }
+        .product-container{
+            display: flex;
+            justify-content: center;
+            gap: 2px;
+            padding: 2px;
+        }
+        .product-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 5px rgba(0,0,0,0.9);
+            width: 220px;
+            height: 290px;
+        }
+        .product-title{
+            font-size: 1,5rem;
+            margin: 15px 0;
+        }
+        .product-description{
+            font-size: 1rem;
+            color: #777;
+            text-align: center;
+            margin-bottom: 0.001px;
+        }
+        .product-btn{
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+ <header> 
+    <h1>our amazing</h1>
+    <p>Explore a collection of high quality products</p>
+ </header>
+ <main>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/b5/ef/62/b5ef624a0a7bafd40a09790f292897fb.jpg" 
+            class="product-img" width="200px" height="90px">
+            <h1 class="product-title">product 1</h1>
+            <p class="product-description">
+                this is a great product with amazing features
+            </p>
+            <span class="price">$89.01</span>
+            <button class="product-btn">Add to card</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/b5/ef/62/b5ef624a0a7bafd40a09790f292897fb.jpg" 
+            class="product-img" width="200px" height="90px">
+            <h1 class="product-title">product 1</h1>
+            <p class="product-description">
+                this is a great product with amazing features
+            </p>
+            <span class="price">$89.01</span>
+            <button class="product-btn">Add to card</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/b5/ef/62/b5ef624a0a7bafd40a09790f292897fb.jpg" 
+            class="product-img" width="200px" height="90px">
+            <h1 class="product-title">product 1</h1>
+            <p class="product-description">
+                this is a great product with amazing features
+            </p>
+            <span class="price">$89.01</span>
+            <button class="product-btn">Add to card</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/b5/ef/62/b5ef624a0a7bafd40a09790f292897fb.jpg" 
+            class="product-img" width="200px" height="90px">
+            <h1 class="product-title">product 1</h1>
+            <p class="product-description">
+                this is a great product with amazing features
+            </p>
+            <span class="price">$89.01</span>
+            <button class="product-btn">Add to card</button>
+        </div>
+    </div>
+ </main>
+</body>
+</html>

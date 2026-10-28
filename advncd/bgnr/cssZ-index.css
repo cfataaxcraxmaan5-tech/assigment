@@ -1,0 +1,13 @@
+.position{
+    background-color: blue;
+    color: beige;
+    width: 10px;
+    height: 5px;
+}
+.position{
+    background-color: black;
+    color: chocolate;
+    width: 100px;
+    height: 100px;
+    nav-down: auto;
+}
